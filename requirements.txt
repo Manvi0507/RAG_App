@@ -5,9 +5,8 @@ langchain
 langchain-community
 PyPDF2
 chromadb
-faiss-gpu
+faiss-cpu
 langchain_google_genai
 pdfplumber
-pandas
 fitz
 PyMuPDF
