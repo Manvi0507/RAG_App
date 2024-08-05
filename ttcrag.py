@@ -103,7 +103,7 @@ def user_input(user_question):
 
     print(response)
     st.write("Reply: ", response["output_text"])
-    print(response["source_documents"][0].metadata["source"])
+    #print(response["source_documents"][0].metadata["source"])
 
 
 # Main function to run Streamlit app
