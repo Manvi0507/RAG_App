@@ -103,7 +103,9 @@ def user_input(user_question):
 
     # Display links and responses
     for doc in docs:
-        st.write(f"Document: [{doc.metadata['file_name']}]")
+        # Ensure the metadata includes file_name
+        file_name = doc.metadata.get('file_name', 'Unknown Document')
+        st.write(f"Document: [{file_name}]")
     st.write("Reply: ", response["output_text"])
 
     print(response)
