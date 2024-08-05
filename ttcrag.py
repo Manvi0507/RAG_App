@@ -106,13 +106,13 @@ def user_input(user_question):
 
 # Main function to run Streamlit app
 def main():
-    st.set_page_config(page_title="Chat with PDF using Gemini")
+    st.set_page_config(page_title="Chat with Documents using Gemini")
     st.header("QA with Your Multiple Documents 💁")
 
     user_question = st.text_input("Ask a Question from the PDF Files")
 
-    if st.button("Clear Response"):
-        st.write("")  # Clear previous response
+    #if st.button("Clear Response"):
+        #st.write("")  # Clear previous response
 
     if user_question:
         user_input(user_question)
