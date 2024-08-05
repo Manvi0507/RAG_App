@@ -106,7 +106,7 @@ def user_input(user_question):
         st.write(f"Document: [{doc.metadata['file_name']}]")
     st.write("Reply: ", response["output_text"])
 
-    #print(response)
+    print(response)
     #st.write("Reply: ", response["output_text"])
 
 # Main function to run Streamlit app
