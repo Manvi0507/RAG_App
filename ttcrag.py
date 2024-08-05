@@ -105,12 +105,6 @@ def user_input(user_question):
     st.write("Reply: ", response["output_text"])
     print(response["source_documents"][0].metadata["source"])
 
-# invoke the qa chain and get a response for user query
-query = "What is the model architecture discussed in this paper?"
-response = qa_chain.invoke({"query": query})
-print(response["result"])
-print("*"*30)
-print("Source Document:", response["source_documents"][0].metadata["source"])
 
 # Main function to run Streamlit app
 def main():
