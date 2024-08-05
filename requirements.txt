@@ -10,7 +10,3 @@ pdfplumber
 pandas
 fitz
 PyMuPDF
-google-auth
-nest_asyncio
-github
-
