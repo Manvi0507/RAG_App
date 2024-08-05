@@ -9,8 +9,6 @@ langchain_google_genai
 pdfplumber
 pandas
 fitz
-llama-index
-llama-parse
 PyMuPDF
 google-auth
 nest_asyncio
