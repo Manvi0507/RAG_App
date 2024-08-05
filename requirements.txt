@@ -4,7 +4,7 @@ python-dotenv
 langchain
 PyPDF2
 chromadb
-faiss-cpu
+faiss
 langchain_google_genai
 pdfplumber
 pandas
