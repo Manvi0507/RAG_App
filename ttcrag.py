@@ -101,15 +101,8 @@ def user_input(user_question):
         {"input_documents": docs, "question": user_question}
         , return_only_outputs=True)
 
-    # Display links and responses
-    for doc in docs:
-        # Ensure the metadata includes file_name
-        file_name = doc.metadata.get('file_name', 'Unknown Document')
-        st.write(f"Document: [{file_name}]")
-    st.write("Reply: ", response["output_text"])
-
     print(response)
-    #st.write("Reply: ", response["output_text"])
+    st.write("Reply: ", response["output_text"])
 
 # Main function to run Streamlit app
 def main():
