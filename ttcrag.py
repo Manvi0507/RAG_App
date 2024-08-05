@@ -12,8 +12,8 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import pdfplumber
 import pandas as pd
-import fitz  # PyMuPDF for image extraction
-import cv2  # OpenCV for image processing
+#import fitz  # PyMuPDF for image extraction
+#import cv2  # OpenCV for image processing
 import numpy as np
 
 # Load environment variables
