@@ -8,4 +8,9 @@ chromadb
 faiss-cpu
 langchain_google_genai
 pdfplumber
+pandas
+llama-index
+PyMuPDF
+google-auth
+
 
