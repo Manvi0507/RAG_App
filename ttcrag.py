@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 import pdfplumber
 import pandas as pd
 import numpy as np
+import chromadb
 
 # Load environment variables
 load_dotenv()
