@@ -50,7 +50,7 @@ def get_text_chunks(text):
 # Function to get Vector Store using Chroma
 def get_vector_store(text_chunks):
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    vector_store = Chroma.from_texts(text_chunks, embedding=embeddings, persist_directory="chroma_db")
+    vector_store = Chroma.from_texts(text_chunks, embedding=embeddings, persist_directory="chromadb")
     return vector_store
 
 # Function to initialize conversational chain
