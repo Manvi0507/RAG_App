@@ -172,13 +172,12 @@ def main():
 
     user_question = st.text_input("Ask a Question from the PDF Files", value=st.session_state.response)
 
-    if st.button("Clear Response"):
-       st.session_state.user_question = ""  # Clear the input cell
-       st.session_state.response = ""  # Clear the output cell
-       st.session_state.memory = ConversationBufferMemory(
-           memory_key="history",
-           input_key="question"
-       )  # Clear the memory
+    #if st.button("Clear Response"):
+     #  st.session_state.user_question = ""  # Clear the input cell
+      # st.session_state.response = ""  # Clear the output cell
+       #st.session_state.memory = ConversationBufferMemory(
+         #  memory_key="history",
+          # input_key="question")  # Clear the memory
 
     if user_question:
         st.session_state.response = user_question
