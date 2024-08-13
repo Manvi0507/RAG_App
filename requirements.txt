@@ -11,6 +11,7 @@ pdfplumber
 pandas
 llama-index
 PyMuPDF
+matplotlib
 google-auth
 
 
