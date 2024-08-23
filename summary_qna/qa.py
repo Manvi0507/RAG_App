@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.document_loaders import PyPDFLoader, UnstructuredPowerPointLoader, UnstructuredWordDocumentLoader, TextLoader
@@ -165,6 +166,7 @@ def user_input(user_question, vector_store):
         st.write("No valid response received.")
 
 # Main function to run Streamlit app
+# Main function to run Streamlit app
 def main():
     st.set_page_config(page_title="Chat with Documents using Gemini")
     st.header("Chat or Summarize Your Documents 💁")
@@ -185,8 +187,8 @@ def main():
         user_question = st.text_input("Ask a Question from the Documents", value=st.session_state.response)
     
     if st.button("Ask Question"):
-       user_input(user_question, st.session_state.vector_store)  # Added vector_store argument
-
+       st.session_state.response = user_question
+       user_input(user_question, st.session_state.vector_store)  # Process the question here when button is clicked
 
     # Button to clear the response and user input
     if st.button("Clear Response"):
@@ -198,12 +200,8 @@ def main():
         # Version 1.37 and above
         else:
             st.rerun()  # Use st.rerun() for newer versions
-    
-    # Process question or summarization request
-    if user_question and functionality == "Q&A":
-        st.session_state.response = user_question
-        user_input(user_question, st.session_state.vector_store)
 
+    # Summarization functionality
     if functionality == "Summarize":
         if st.button("Summarize Document"):
             user_input("Summarize the document", st.session_state.vector_store)
