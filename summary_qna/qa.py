@@ -188,10 +188,17 @@ def main():
        user_input(user_question, st.session_state.vector_store)  # Added vector_store argument
 
 
+    # Button to clear the response and user input
     if st.button("Clear Response"):
-       st.session_state.response = ""
-       st.write("Response cleared.")
-
+        st.session_state.response = ""
+        st.write("Response cleared.")
+        # Version 1.36 and below
+        if st.__version__ <= "1.36.0":
+           st.experimental_rerun()  # Works for older versions
+        # Version 1.37 and above
+        else:
+            st.rerun()  # Use st.rerun() for newer versions
+    
     # Process question or summarization request
     if user_question and functionality == "Q&A":
         st.session_state.response = user_question
