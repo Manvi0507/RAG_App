@@ -97,7 +97,7 @@ def get_conversational_chain(vector_store):
     If the task is to **answer a question**:
     - Use the context from the document to answer the user's question.
     - Connect the response to the ongoing conversation history, making the conversation interactive.
-    - For every answer, return at least 4 relevant document chunks that support your response.
+    
     
     In both cases:
     - Respond in clear, simple language that is easy for non-experts to understand.
@@ -119,7 +119,6 @@ def get_conversational_chain(vector_store):
     Your response should:
     1. Be clear and accessible to a layman.
     2. Provide the source document.
-    3. For every answer, return at least 4 relevant document chunks that support your response.
     """
 
 
