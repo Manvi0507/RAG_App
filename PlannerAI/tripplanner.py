@@ -40,7 +40,7 @@ def prep_image(uploaded_file):
     
 #Initialize the streamlit app
 #st.set_page_config(page_title="Planner: Discover and Plan your Culinary Adventures!")
-#st.image(os.path.join(os.getcwd(), 'PlannerAI', 'logo.jpg'), width=70)
+st.image('PlannerAI/logo.jpg', width=70)
 st.header("Planner: Discover and Plan your Culinary Adventures!")
 
 #Creating radio section choices
