@@ -115,3 +115,9 @@ if section_choice == "Dietary Recommendations":
         st.write(response)
 
 ###########################################################################################
+
+# Clear response button
+if st.button("Clear Response"):
+    st.write("Response cleared.")
+    st.text_area("")
+
