@@ -123,7 +123,7 @@ def get_conversational_chain(vector_store):
     """
 
 
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.0)
+    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.1)
     
     prompt = PromptTemplate(
         template=prompt_template,
